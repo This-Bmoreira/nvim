@@ -27,7 +27,7 @@ return {
         "typescript",
         "tsx",
         "yaml",
-        "html",
+        "html",  
         "css",
         "prisma",
         "markdown",
@@ -44,8 +44,8 @@ return {
       incremental_selection = {
         enable = true,
         keymaps = {
-          init_selection = "<S-S>",  -- mudado para Shift+space
-          node_incremental = "<S-S>",  -- mudado para Shift+space
+          init_selection = "<S-S>",  -- mudado para Shift+S
+          node_incremental = "<S-S>",  -- mudado para Shift+S
           scope_incremental = false,
           node_decremental = "<bs>",
         },
