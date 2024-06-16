@@ -1,26 +1,28 @@
 return {
+  -- Especifica o plugin 'hrsh7th/nvim-cmp'
   "hrsh7th/nvim-cmp",
-  event = "InsertEnter",
+  event = "InsertEnter", -- Carrega o plugin no evento InsertEnter
   dependencies = {
-    "hrsh7th/cmp-path", -- source for file system paths
+    "hrsh7th/cmp-path", -- Fonte para caminhos do sistema de arquivos
   },
   config = function()
+    -- Importa o plugin nvim-cmp
     local cmp = require("cmp")
 
+    -- Configura o nvim-cmp
     cmp.setup({
       completion = {
-        completeopt = "menu,menuone,preview,noselect",
+        completeopt = "menu,menuone,preview,noselect", -- Configurações de completamento
       },
       mapping = cmp.mapping.preset.insert({
-        ["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
-        ["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
-        ["<CR>"] = cmp.mapping.confirm({ select = false }),
+        ["<C-k>"] = cmp.mapping.select_prev_item(), -- Seleciona a sugestão anterior
+        ["<C-j>"] = cmp.mapping.select_next_item(), -- Seleciona a próxima sugestão
+        ["<CR>"] = cmp.mapping.confirm({ select = false }), -- Confirma a sugestão selecionada
       }),
-      -- sources for autocompletion
+      -- Fontes para autocompletar
       sources = cmp.config.sources({
-        { name = "path" }, -- file system paths
+        { name = "path" }, -- Caminhos do sistema de arquivos
       }),
     })
   end,
 }
-
