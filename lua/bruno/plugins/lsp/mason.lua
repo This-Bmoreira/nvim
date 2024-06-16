@@ -34,6 +34,7 @@ return {
         "emmet_ls",      -- Servidor para Emmet
         "prismals",      -- Servidor para Prisma
         "pyright",       -- Servidor para Python
+        "clangd",        -- Servidor para C/C++
       },
     })
   end,

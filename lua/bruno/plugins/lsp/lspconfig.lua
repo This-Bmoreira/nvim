@@ -125,6 +125,12 @@ return {
           },
         })
       end,
+      ["clangd"] = function()
+        -- Configura clangd para C/C++
+        lspconfig["clangd"].setup({
+          capabilities = capabilities,
+        })
+      end,
     })
   end,
 }
