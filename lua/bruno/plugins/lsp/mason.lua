@@ -10,7 +10,6 @@ return {
 
     -- Importa o plugin mason-lspconfig
     local mason_lspconfig = require("mason-lspconfig")
-
     -- Habilita o mason e configura ícones
     mason.setup({
       ui = {

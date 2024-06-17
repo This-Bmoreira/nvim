@@ -38,7 +38,8 @@ return {
         },
       },
       filters = {
-        custom = { ".DS_Store" },
+	dotfiles = true,
+        custom = { ".DS_Store", ".gitignore" },
       },
       git = {
         ignore = false,

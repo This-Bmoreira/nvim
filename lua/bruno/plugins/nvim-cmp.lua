@@ -21,6 +21,7 @@ return {
       }),
       -- Fontes para autocompletar
       sources = cmp.config.sources({
+	-- { name = "nvim_lsp"},
         { name = "path" }, -- Caminhos do sistema de arquivos
       }),
     })
