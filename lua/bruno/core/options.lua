@@ -12,6 +12,9 @@ local opt = vim.opt
 -- opt.backup = true
 -- opt.writebackup = true
 
+
+opt.path=".,,**"
+
 -- Configurações de Indentação
 -- Quebra de Indentação
 opt.breakindent = true
