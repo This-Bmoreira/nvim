@@ -5,13 +5,12 @@ local opt = vim.opt
 
 -- Configurações de Autosave
 -- Observação: O autosave só funciona bem quando 'autowrite' e 'autowriteall' estão ativados juntos
--- opt.autowrite = true
--- opt.autowriteall = true
+opt.autowrite = true
+opt.autowriteall = true
 
 -- Configurações de Backup
--- opt.backup = true
--- opt.writebackup = true
-
+opt.backup = false
+opt.writebackup = true -- Neovim cria um backup temporário durante a gravação, mas não o mantém após a gravação.
 
 opt.path=".,,**"
 
@@ -49,3 +48,10 @@ opt.background = 'dark'   -- Esquema de cores pode ser claro ou escuro; serão f
 -- Ignore Case
 opt.ignorecase = true
 opt.smartcase = true
+
+-- Desativar swapfile globalmente
+-- Caminho para os arquivos salvos de swap 
+-- :echo &directory
+opt.swapfile = false
+
+
