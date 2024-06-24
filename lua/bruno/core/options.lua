@@ -8,6 +8,13 @@ local opt = vim.opt
 opt.autowrite = true
 opt.autowriteall = true
 
+-- Undo
+
+-- Ativar o armazenamento de undo
+opt.undofile = false
+-- Definir o diretório de undo
+vim.o.undodir = vim.fn.expand("~/.local/share/nvim/undodir") -- garanta que o diretório esteja criado.
+
 -- Configurações de Backup
 opt.backup = false
 opt.writebackup = true -- Neovim cria um backup temporário durante a gravação, mas não o mantém após a gravação.
