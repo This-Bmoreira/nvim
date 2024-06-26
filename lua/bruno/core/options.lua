@@ -40,6 +40,7 @@ opt.backspace = {'indent', 'eol', 'start'}  -- Permitir backspace em indentaçã
 opt.relativenumber = true
 opt.number = true
 opt.linebreak = true
+opt.wrap = true
 
 
 -- Linha do Cursor
@@ -65,4 +66,6 @@ opt.smartcase = true
 -- :echo &directory
 opt.swapfile = false
 
+opt.list = true -- Isso é útil para ver a diferença entre tabs e espaços e para identificar espaços em branco no final de linhas
+vim.o.listchars = "tab:>-,trail:·,extends:>,precedes:<,nbsp:~" --define quais caracteres são usados no modo de lista e para o comando
 
