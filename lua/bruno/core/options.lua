@@ -41,8 +41,12 @@ opt.relativenumber = true
 opt.number = true
 opt.linebreak = true
 
+
 -- Linha do Cursor
 opt.cursorline = true  -- Destacar a linha atual do cursor
+
+opt.scrolloff = 11 -- define o número mínimo de linhas de tela que devem ser mantidas acima e abaixo do cursor.
+
 
 -- Aparência
 -- Necessário usar iTerm2 ou outro terminal com suporte a cores reais
