@@ -28,10 +28,12 @@ opt.breakindent = true
 
 -- Tabs e Indentação
 opt.tabstop = 2            -- 2 espaços para tabs
+opt.softtabstop = 2
 opt.shiftwidth = 2         -- Espaçamentos para a largura da indentação
 opt.expandtab  = true      -- Expandir tab para espaços
 opt.autoindent = true      -- Copiar a indentação da linha atual ao iniciar uma nova
 opt.smartindent = true     -- Ajuda a manter a indentação automática do código
+
 
 -- Backspace
 opt.backspace = {'indent', 'eol', 'start'}  -- Permitir backspace em indentação, fim de linha ou início do modo de inserção
@@ -68,4 +70,5 @@ opt.swapfile = false
 
 opt.list = true -- Isso é útil para ver a diferença entre tabs e espaços e para identificar espaços em branco no final de linhas
 vim.o.listchars = "tab:>-,trail:·,extends:>,precedes:<,nbsp:~" --define quais caracteres são usados no modo de lista e para o comando
+
 
